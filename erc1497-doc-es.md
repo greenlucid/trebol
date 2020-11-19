@@ -22,7 +22,7 @@ Vamos a volver a `SimpleEscrow` y lo vamos a refactorizar para implementar la in
 
 Ahora, primero vamos a implementar IEvidence:
 
-Lo siguiente es librarnos de `string agreement`. En su lugar, necesitamos `uint metaevidenceID` y `string _metaevidence`, que contiene la URI para el JSON con la metaprueba cuyo formato ha sido realizado según el estándar, y también tenemos que emitir el evento `MetaEvidence`.
+Lo siguiente es librarnos de `string agreement`. En su lugar, necesitamos `uint metaevidenceID` y `string _metaevidence`, que contiene la URI para el JSON con la meta-prueba cuyo formato ha sido realizado según el estándar, y también tenemos que emitir el evento `MetaEvidence`.
 
 Establecemos el identificador de la meta-prueba a la constante cero, ya que no habrá múltiples meta-pruebas en este contrato. Cualquier constante puede servir. Después, emitimos `MetaEvidence` con la `_metaevidence` provista. Este string contiene la URI desde la cual el contenido de la meta-prueba puede ser obtenido.
 
